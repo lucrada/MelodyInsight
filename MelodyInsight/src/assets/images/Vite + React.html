@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://localhost:5173/signup? -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+    <script type="module" src="./Vite + React_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5173/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite + React</title>
+  <style type="text/css" data-vite-dev-id="/Users/joyal/Documents/MyProject/MelodyInsight/src/Pages/Home/Home.css">.container
+{
+    background-image: linear-gradient(to bottom, #0bf, #066aff);
+    
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 3rem 3fr 0.5fr;
+    color: aliceblue;
+
+}
+
+.top
+{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.navbar
+{
+    min-width: 100%;
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+
+}
+
+.navCenter,.navLeft,.navRight
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navLeft
+{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.navRight
+{
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+
+.navCenter
+{
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+
+
+
+
+
+
+
+</style><style type="text/css" data-vite-dev-id="/Users/joyal/Documents/MyProject/MelodyInsight/src/index.css">/* Reset default browser styles */
+body,
+h1,h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a default font family */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Define global styles */
+.container {
+  
+  margin: 0 auto;
+}</style><style type="text/css" data-vite-dev-id="/Users/joyal/Documents/MyProject/MelodyInsight/src/Pages/Components/Slider/Slider.css">
+/*  styles for slider later move this to a new file to create an independent slider component  */
+
+.slider
+{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    overflow: hidden;
+    position: relative;
+}
+.slider1_text,.slider2_text,.slider3_text,.slider4_text
+{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    font-size: 5rem;
+    color: aliceblue;
+}
+
+.slider1,.slider2,.slider3,.slider4
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+   
+
+}
+
+.slider1
+{
+    animation: fade1 12s linear infinite;
+   
+
+}
+
+.slider2
+{
+    animation: fade2 12s linear infinite;
+
+}
+.slider3
+{
+    animation: fade3 12s linear infinite;
+
+}
+
+.slider4
+{
+    animation: fade4 12s linear infinite;
+    /* background-image: linear-gradient(to bottom, #0bf, #066aff); */
+
+}
+
+
+.SliderImg
+{
+   width: 130%;
+   position: absolute;
+   top : -50%;
+ 
+   
+   animation: zoomout 12s linear infinite;
+
+}
+
+
+/* ALL KEYFRAMES */
+@keyframes fade1 {
+    0%{
+        opacity: 1;
+    }
+    
+    
+    25%{
+        opacity: 1;
+    }
+    26%{
+        opacity: 0;
+    }
+     
+    50%{
+        opacity: 0;
+    }
+    
+    98%{
+        opacity: 0;
+    }
+
+    99%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 1;
+    }
+
+}
+
+@keyframes fade2 {
+    0%{
+        opacity: 0;
+    }
+    
+   
+    24%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+
+    49%{
+        opacity: 1;
+    }
+     
+    50%{
+        opacity: 0;
+    }
+    
+    75%{
+        opacity: 0;
+    }
+
+    99%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 0;
+    }
+
+}
+@keyframes fade3 {
+    0%{
+        opacity: 0;
+    }
+    
+   
+    25%{
+        opacity: 0;
+    }
+
+
+     
+    49%{
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 1;
+    }
+    74%{
+        opacity: 1;
+    }
+    
+    75%{
+        opacity: 0;
+    }
+   
+    100%{
+        opacity: 0;
+    }
+
+}
+@keyframes fade4 {
+    0%{
+        opacity: 0;
+    }
+    
+   
+    25%{
+        opacity: 0;
+    }
+
+
+     
+    50%{
+        opacity: 0;
+    }
+    74%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 1;
+    }
+    
+    
+
+    99%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+
+}
+
+@keyframes zoomout{
+   
+   
+    100%
+    {
+        width: 105%;
+    }
+}</style><style type="text/css" data-vite-dev-id="/Users/joyal/Documents/MyProject/MelodyInsight/src/Pages/Components/Login/Login.module.css">._container_ijc0e_1
+{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+
+._mainHeading_ijc0e_11{
+
+  grid-row: 1/2;
+  grid-column: 1/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+._form_ijc0e_20{
+    grid-row: 2/5;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+._username_ijc0e_29,._password_ijc0e_29{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 300;
+    
+}
+
+._username_ijc0e_29 > label,._password_ijc0e_29 > label
+{
+    margin-bottom: 1rem;
+}
+._username_ijc0e_29 > input, ._password_ijc0e_29 > input
+{
+    width: 20rem;
+    height: 2rem;
+    border-radius: 10px;
+    border: none;
+
+}
+
+
+._login_ijc0e_54
+{
+    
+}
+._btn_ijc0e_58
+{
+    width: 10rem;
+    height: 2rem;
+    border-radius: 15px;
+    border: none;
+    transition: transform 0.1s;
+}
+._btn_ijc0e_58:hover,._btn_ijc0e_58:active
+{
+    background-color: black;
+    color: antiquewhite;
+    transform: translateY(-2px);
+}
+._btn_ijc0e_58:active
+{
+    transform: translateY(2px);
+}
+._logo_ijc0e_76
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+._logo_ijc0e_76 > h2
+{
+   position: absolute;
+   font-size: 5rem;
+   top: 22rem;
+}
+._logoImg_ijc0e_92
+{
+    transform: scale(1.5);
+    /* width: 60%; */
+    
+}
+._sideimage_ijc0e_98
+{
+    grid-row: 2/5;
+    grid-column: 2/3;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+
+</style><style type="text/css" data-vite-dev-id="/Users/joyal/Documents/MyProject/MelodyInsight/src/Pages/Components/SignUp/Signup.module.css">._container_11493_1{
+    display: grid;
+    grid-template-rows:  1fr 4fr;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+._form_11493_8{
+    grid-row: 2/3;
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+}
+
+
+._name_11493_18{
+    grid-row: 1/2;
+    grid-column: 1/2; 
+}
+._usename_11493_22{
+    grid-row: 1/2;
+    grid-column: 2/3; 
+}
+._email_11493_26
+{
+    grid-row: 2/3;
+    grid-column: 1/2; 
+}
+
+._password_11493_32{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+._form_11493_8 > *{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+._btn_11493_42{
+    grid-row: 3/4;
+    grid-column: 1/3;
+
+    width: 10rem;
+    height: 2rem;
+    border-radius: 15px;
+    border: none;
+    transition: transform 0.1s;
+    justify-content: center;
+    align-items: center;
+}
+._btn_11493_42:hover,._btn_11493_42:active
+{
+    background-color: black;
+    color: antiquewhite;
+    transform: translateY(-2px);
+}
+._btn_11493_42:active
+{
+    transform: translateY(2px);
+}
+
+</style></head>
+  <body>
+    <div id="root"><div class="container"><header class="top"><nav class="navbar"><div class="navLeft"><h2>Melody Insight</h2></div><div class="navCenter"><button>LogIn</button><button>SignUp</button></div><div class="navRight"><button>Search</button></div></nav></header><div class="_container_11493_1"><h1>Create An Account</h1><form class="_form_11493_8" action="http://localhost:5173/signup?"><div class="_name_11493_18"><label for="name">Enter your name </label><input type="text" placeholder="name"></div><div><label for="username">Enter your Username</label><input type="text" placeholder="username"></div><div class="_email_11493_26"><label for="email">Enter your Email</label><input type="text" placeholder="email"></div><div class="_password_11493_32"><label for="Password">Enter your Password</label><input type="text" placeholder="email"></div><button class="_btn_11493_42">Register</button></form></div><div class="footer">Footer</div></div></div>
+    <script type="module" src="./Vite + React_files/main.jsx"></script>
+  
+
+</body></html>

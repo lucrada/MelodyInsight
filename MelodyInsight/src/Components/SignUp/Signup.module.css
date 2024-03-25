@@ -1,0 +1,119 @@
+.container{
+    display: grid;
+    grid-template-rows:  1fr 4fr;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.mainheading{
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    grid-row: 2/3;
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+}
+
+.sidecontent{
+    grid-row: 2/-1;
+    grid-column: 3/4;
+    position: relative;
+ 
+}
+.sidecontent h4
+{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 21rem;
+}
+
+.sidecontent h3
+{
+    position: absolute;
+    top: 15rem;
+    left: 11rem;
+}
+
+.sidecontent h2
+{
+   position: absolute;
+   top: 2rem;
+   left: 11rem;
+}
+.sidecontent img
+{
+    transform: translateY(-3rem);
+}
+
+
+.name{
+    grid-row: 1/2;
+    grid-column: 1/2; 
+}
+.usename{
+    grid-row: 1/2;
+    grid-column: 2/3; 
+}
+.email
+{
+    grid-row: 2/3;
+    grid-column: 1/2; 
+}
+
+.password{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.form > *{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+.btncontainer{
+    grid-row: 3/4;
+    grid-column: 1/3;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    
+
+    width: 11rem;
+    height: 2.5rem;
+    border-radius: 15px;
+    border: none;
+    transition: transform 0.1s;
+    
+}
+.btn:hover,.btn:active
+{
+    background-color: black;
+    color: antiquewhite;
+    transform: translateY(-2px);
+}
+.btn:active
+{
+    transform: translateY(2px);
+}
+
+.form label
+{
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+.form input
+{
+    width: 20rem;
+    height: 2rem;
+    border-radius: 10px;
+    border: none;
+
+}

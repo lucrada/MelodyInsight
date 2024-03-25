@@ -1,0 +1,223 @@
+
+/*  styles for slider later move this to a new file to create an independent slider component  */
+
+.slider
+{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    overflow: hidden;
+    position: relative;
+}
+.slider1_text,.slider2_text,.slider3_text{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    font-size: 5rem;
+    color: aliceblue;
+}
+
+.slider1,.slider2,.slider3,.slider4
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+   
+
+}
+
+.slider1
+{
+    animation: fade1 12s linear infinite;
+   
+
+}
+
+.slider2
+{
+    animation: fade2 12s linear infinite;
+
+}
+.slider3
+{
+    animation: fade3 12s linear infinite;
+
+}
+
+.slider4
+{
+    animation: fade4 12s linear infinite;
+    /* background-image: linear-gradient(to bottom, #0bf, #066aff); */
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+  
+
+}
+.slider4 h1{
+    font-size: 3rem;
+}
+.slider4 h2{
+    font-size: 2rem;
+}
+.slider4 img{
+    transform: scale(1.5);
+}
+
+
+
+
+
+.SliderImg
+{
+   width: 130%;
+   position: absolute;
+   top : -50%;
+ 
+   
+   animation: zoomout 12s linear infinite;
+
+}
+
+
+/* ALL KEYFRAMES */
+@keyframes fade1 {
+    0%{
+        opacity: 1;
+    }
+    
+    
+    25%{
+        opacity: 1;
+    }
+    26%{
+        opacity: 0;
+    }
+     
+    50%{
+        opacity: 0;
+    }
+    
+    98%{
+        opacity: 0;
+    }
+
+    99%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 1;
+    }
+
+}
+
+@keyframes fade2 {
+    0%{
+        opacity: 0;
+    }
+    
+   
+    24%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+
+    49%{
+        opacity: 1;
+    }
+     
+    50%{
+        opacity: 0;
+    }
+    
+    75%{
+        opacity: 0;
+    }
+
+    99%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 0;
+    }
+
+}
+@keyframes fade3 {
+    0%{
+        opacity: 0;
+    }
+    
+   
+    25%{
+        opacity: 0;
+    }
+
+
+     
+    49%{
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 1;
+    }
+    74%{
+        opacity: 1;
+    }
+    
+    75%{
+        opacity: 0;
+    }
+   
+    100%{
+        opacity: 0;
+    }
+
+}
+@keyframes fade4 {
+    0%{
+        opacity: 0;
+    }
+    
+   
+    25%{
+        opacity: 0;
+    }
+
+
+     
+    50%{
+        opacity: 0;
+    }
+    74%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 1;
+    }
+    
+    
+
+    99%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+
+}
+
+@keyframes zoomout{
+   
+   
+    100%
+    {
+        width: 105%;
+    }
+}

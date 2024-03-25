@@ -1,0 +1,109 @@
+.container
+{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+
+.mainHeading{
+
+  grid-row: 1/2;
+  grid-column: 1/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.form{
+    grid-row: 2/5;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.username,.password{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 300;
+    
+}
+
+.username > label,.password > label
+{
+    margin-bottom: 1rem;
+}
+.username > input, .password > input
+{
+    width: 20rem;
+    height: 2rem;
+    border-radius: 10px;
+    border: none;
+
+}
+
+
+.login
+{
+    
+}
+.btn
+{
+    width: 10rem;
+    height: 2rem;
+    border-radius: 15px;
+    border: none;
+    transition: transform 0.1s;
+}
+.btn:hover
+{
+    background-color: black;
+    color: antiquewhite;
+    transform: translateY(-2px);
+}
+.btn:active
+{
+    transform: translateY(2px);
+}
+.logo
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.logo > h2
+{
+   position: absolute;
+   font-size: 5rem;
+   top: 22rem;
+}
+.logoImg
+{
+    transform: scale(1.5);
+    /* width: 60%; */
+    
+}
+.sideimage
+{
+    grid-row: 2/5;
+    grid-column: 2/3;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+

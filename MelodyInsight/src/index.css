@@ -1,0 +1,18 @@
+/* Reset default browser styles */
+*,::before,::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Set a default font family */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Define global styles */
+.container {
+  
+  margin: 0 auto;
+}

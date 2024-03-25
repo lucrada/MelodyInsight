@@ -1,0 +1,7 @@
+.dashboard{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 6rem 1fr;
+    grid-template-columns: 1fr;
+}
