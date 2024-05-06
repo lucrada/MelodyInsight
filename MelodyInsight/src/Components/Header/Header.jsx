@@ -4,26 +4,34 @@ import { useNavigate } from "react-router-dom";
 
 function Header() {
     const navigate = useNavigate();
-  return (
-    <div className={styles.container}>
-        <div className={styles.logo}>
-            <h4>Melody Insight</h4>
-            <img className={styles.logoimg} src={logo} alt="" onClick={()=>{navigate("/")}}/>
+
+    const logout = async () => {
+        const api_url = 'http://localhost:3000/cms/user/logout';
+        try {
+            const response = await fetch(api_url, {
+                method: 'POST',
+                credentials: 'include',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
+            const data = await response.json();
+            if (data.message === 'LOGGED_OUT') {
+                navigate('/login');
+            }
+        } catch (_) { }
+    }
+    return (
+        <div className={styles.container}>
+            <div className={styles.logo}>
+                <h4>Melody Insight</h4>
+                <img className={styles.logoimg} src={logo} alt="" onClick={() => { navigate("/") }} />
+            </div>
+            <div>
+                <button onClick={logout} href='#'>Log Out</button>
+            </div>
         </div>
-        <div>
-            <h4>Search</h4>
-        </div>
-        <div>
-            <h4>Library</h4>
-        </div>
-        <div>
-            <h4>Trending</h4>
-        </div>
-        <div>
-            <h4>Favourites</h4>
-        </div>
-    </div>
-  )
+    )
 }
 
 export default Header

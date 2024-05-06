@@ -12,41 +12,41 @@ import Search from './Components/Search/Search.jsx'
 
 const router = createBrowserRouter([
   {
-    path : "/",
-    element : <App/>,
-    children : [
+    path: "/",
+    element: <App />,
+    children: [
       {
-        path : "/",
-        element : <Slider/>
+        path: "/",
+        element: <Slider />
 
       },
 
       {
-        path : "login",
-        element : <Login/>
+        path: "login",
+        element: <Login />
       },
       {
-        path : "signup",
-        element : <Signup/>
+        path: "signup",
+        element: <Signup />
 
       }
     ]
   },
   {
     path: "/dashboard",
-    element : <Dashboard/>,
-    children : [
+    element: <Dashboard />,
+    children: [
       {
-        path : "/dashboard",
-        element : <Search/>
+        path: "/dashboard",
+        element: <Search />
       }
-    
+
     ]
   }
 
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )
